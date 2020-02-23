@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/gunjandatta/gd-sprest-bs-starter#readme",
   "dependencies": {
-    "gd-sprest-bs": "^2.9.5"
+    "gd-sprest-bs": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
