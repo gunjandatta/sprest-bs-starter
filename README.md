@@ -53,7 +53,7 @@ For this example we will assume it's in the https://[tenant].sharepoint.com/clie
 
 2) Under the "Console" tab, load the library by typing:
 
-```var s=document.createElement("script"); s.src="/clientsideassets/solution/project.js; document.head.appendChild(s);```
+```var s=document.createElement("script"); s.src="/clientsideassets/solution/project.js"; document.head.appendChild(s);```
 
 3) Install the solution
 

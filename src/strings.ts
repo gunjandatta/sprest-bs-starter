@@ -6,5 +6,6 @@ export default {
     GlobalVariable: "MyProject",
     ProjectName: "Project",
     ProjectDescription: "Created using the gd-sprest-bs library.",
-    ScriptUrl: "/clientsideassets/solution/project.js"
+    ProjectUrl: "/sites/dev/siteassets/sprest-bs-starter/index.html",
+    ScriptUrl: "/sites/dev/siteassets/sprest-bs-starter/project.js"
 }

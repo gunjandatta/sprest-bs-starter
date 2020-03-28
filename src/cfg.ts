@@ -13,7 +13,7 @@ export const Configuration = Helper.SPConfig({
 Configuration["addToPage"] = (pageUrl: string) => {
     // Add a content editor webpart to the page
     Helper.addContentEditorWebPart(pageUrl, {
-        contentLink: Strings.ScriptUrl,
+        contentLink: Strings.ProjectUrl,
         description: Strings.ProjectDescription,
         frameType: "None",
         title: Strings.ProjectName

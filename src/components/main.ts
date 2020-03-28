@@ -21,7 +21,7 @@ export class Project {
         Components.Jumbotron({
             el,
             title: Strings.ProjectName,
-            content: Strings.ProjectDescription
+            content: "<h5>" + Strings.ProjectDescription + "</h5>"
         });
     }
 }

@@ -7,12 +7,12 @@ window[Strings.GlobalVariable] = {
     Configuration
 }
 
-// Get the project element
-let el = document.querySelector(Strings.AppElementId);
+// Get the main element to render the solution to
+let el = document.getElementById(Strings.AppElementId);
 if (el) {
     // Initialize the solution
     new Project(el);
 } else {
     // Log
-    console.error("[" + Strings.ProjectName + "] Error finding the element with id '" + Strings.AppElementId + "'");
+    console.log("[" + Strings.ProjectName + "] Error finding the element with id '" + Strings.AppElementId + "'");
 }

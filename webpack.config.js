@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
         // Output information
         output: {
             path: path.resolve(__dirname, "dist"),
-            filename: "my-project" + (isDev ? "" : ".min") + ".js"
+            filename: "project" + (isDev ? "" : ".min") + ".js"
         },
 
         // External Libs
