@@ -8,11 +8,11 @@ The ```src/strings.ts``` file contains the global variables defined for the solu
 
 ## Assets
 
-This folder contains templates or associated files required with installation, configuration or the solution.
+The ```assests``` folder contains templates or associated files required with installation, configuration or the solution.
 
 ### index.html
 
-This file will contain the html template for the solution and JavaScript reference. This will be referenced by a content editor webpart. The main element id must match the ```AppElementId``` property in the ```src/strings.ts``` file.
+This file will contain the main element to render the solution to, and references the solution's JavaScript file. A helper method will be used to add a content editor webpart to a specified page. In order for this to work, the main element id must match the ```AppElementId``` property in the ```src/strings.ts``` file.
 
 ### SharePoint Storage
 
@@ -32,7 +32,7 @@ Depending on the solution, it may make sense for it to have it's own site collec
 
 ### Solution Url References
 
-The ```ProjectUrl``` and ```ScriptUrl``` properties must be updated to match the storage location.
+The ```ProjectUrl``` and ```ScriptUrl``` properties in the ```src/strings.ts``` file must be updated to match the storage location.
 
 ## Building the Solution
 
