@@ -2,13 +2,17 @@
 
 A basic solution with the core components setup.
 
+## Global Variables
+
+The ```src/strings.ts``` file contains the global variables defined for the solution.
+
 ## Assets
 
 This folder contains templates or associated files required with installation, configuration or the solution.
 
 ### index.html
 
-This file will contain the html template for the solution and JavaScript reference. This will be referenced by a content editor webpart.
+This file will contain the html template for the solution and JavaScript reference. This will be referenced by a content editor webpart. The main element id must match the ```AppElementId``` property in the ```src/strings.ts``` file.
 
 ### SharePoint Storage
 
@@ -25,6 +29,10 @@ If you are unable to use the O365 CDN, you can still create a library in the htt
 #### 3) Site Collection
 
 Depending on the solution, it may make sense for it to have it's own site collection. Use the https://[tenant].sharepoint.com/sites/[solution]/siteassets library to store the files.
+
+### Solution Url References
+
+The ```ProjectUrl``` and ```ScriptUrl``` properties must be updated to match the storage location.
 
 ## Building the Solution
 
@@ -44,8 +52,6 @@ Upload the following files to one of the three SharePoint storage recommendation
 
 * assets/index.html
 * assets/project.js
-
-For this example we will assume it's in the https://[tenant].sharepoint.com/clientsideassets/solution/ folder.
 
 ### Step 2 - Load the Library
 
