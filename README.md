@@ -1,5 +1,6 @@
-# gd-sprest-bs-starter
-Starter solution for a basic project.
+# Starter Solution
+
+A basic solution with the core components setup.
 
 ## Assets
 
