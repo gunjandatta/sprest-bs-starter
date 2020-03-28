@@ -1,10 +1,18 @@
-import { Helper } from "gd-sprest-bs";
 import { Configuration } from "./cfg";
+import { Project } from "./components";
+import Strings from "./strings";
 
 // Create the global variable for this solution
-window["MyProject"] = {
+window[Strings.GlobalVariable] = {
     Configuration
 }
 
-// Notify SharePoint that this library is loaded (Optional)
-Helper.SP.SOD.notifyScriptLoadedAndExecuteWaitingJobs("my-project");
+// Get the project element
+let el = document.querySelector(Strings.AppElementId);
+if (el) {
+    // Initialize the solution
+    new Project(el);
+} else {
+    // Log
+    console.error("[" + Strings.ProjectName + "] Error finding the element with id '" + Strings.AppElementId + "'");
+}
