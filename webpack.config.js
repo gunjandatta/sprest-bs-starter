@@ -1,4 +1,5 @@
 var path = require("path");
+var project = require("./package.json");
 
 // Export the configuration
 module.exports = (env, argv) => {
@@ -9,13 +10,13 @@ module.exports = (env, argv) => {
         // Main project files
         entry: [
             "./node_modules/gd-sprest-bs/dist/gd-sprest-bs-icons.min.js",
-            "./src/index.ts"
+            project.main
         ],
 
         // Output information
         output: {
             path: path.resolve(__dirname, "dist"),
-            filename: "project" + (isDev ? "" : ".min") + ".js"
+            filename: project.name + (isDev ? "" : ".min") + ".js"
         },
 
         // External Libs
