@@ -44,6 +44,12 @@ module.exports = (env, argv) => {
                         { loader: "css-loader" }
                     ]
                 },
+                // Handler HTML Files
+                {
+                    test: /\.html$/,
+                    exclude: "/node_modules/",
+                    use: [{ loader: "html-loader" }]
+                },
                 // Handle TypeScript Files
                 {
                     test: /\.tsx?$/,

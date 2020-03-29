@@ -1,5 +1,6 @@
 import { Components } from "gd-sprest-bs";
 import Strings from "../strings";
+import * as MainContent from "./main.html";
 
 // Main render function
 export class Project {
@@ -21,7 +22,7 @@ export class Project {
         Components.Jumbotron({
             el,
             title: Strings.ProjectName,
-            content: "<h5>" + Strings.ProjectDescription + "</h5>"
+            content: "<p>" + Strings.ProjectDescription + "</p>" + MainContent
         });
     }
 }

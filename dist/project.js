@@ -121,6 +121,17 @@ eval("\n\nfunction __export(m) {\n  for (var p in m) {\n    if (!exports.hasOwnP
 
 /***/ }),
 
+/***/ "./src/components/main.html":
+/*!**********************************!*\
+  !*** ./src/components/main.html ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Module\nvar code = \"<p>\\r\\n    You can use html files to generate content as well.\\r\\n</p>\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/components/main.html?");
+
+/***/ }),
+
 /***/ "./src/components/main.ts":
 /*!********************************!*\
   !*** ./src/components/main.ts ***!
@@ -129,7 +140,7 @@ eval("\n\nfunction __export(m) {\n  for (var p in m) {\n    if (!exports.hasOwnP
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar gd_sprest_bs_1 = __webpack_require__(/*! gd-sprest-bs */ \"gd-sprest-bs\");\n\nvar strings_1 = __webpack_require__(/*! ../strings */ \"./src/strings.ts\"); // Main render function\n\n\nvar Project =\n/** @class */\nfunction () {\n  /**\r\n   * Renders the project.\r\n   * @param el - The element to render the main solution to.\r\n   */\n  function Project(el) {\n    // Render the solution\n    this.render(el);\n  }\n  /**\r\n   * Main render method\r\n   * @param el - The element to render the main solution to.\r\n   */\n\n\n  Project.prototype.render = function (el) {\n    // Render a jumbotron\n    gd_sprest_bs_1.Components.Jumbotron({\n      el: el,\n      title: strings_1[\"default\"].ProjectName,\n      content: \"<h5>\" + strings_1[\"default\"].ProjectDescription + \"</h5>\"\n    });\n  };\n\n  return Project;\n}();\n\nexports.Project = Project;\n\n//# sourceURL=webpack:///./src/components/main.ts?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar gd_sprest_bs_1 = __webpack_require__(/*! gd-sprest-bs */ \"gd-sprest-bs\");\n\nvar strings_1 = __webpack_require__(/*! ../strings */ \"./src/strings.ts\");\n\nvar MainContent = __webpack_require__(/*! ./main.html */ \"./src/components/main.html\"); // Main render function\n\n\nvar Project =\n/** @class */\nfunction () {\n  /**\r\n   * Renders the project.\r\n   * @param el - The element to render the main solution to.\r\n   */\n  function Project(el) {\n    // Render the solution\n    this.render(el);\n  }\n  /**\r\n   * Main render method\r\n   * @param el - The element to render the main solution to.\r\n   */\n\n\n  Project.prototype.render = function (el) {\n    // Render a jumbotron\n    gd_sprest_bs_1.Components.Jumbotron({\n      el: el,\n      title: strings_1[\"default\"].ProjectName,\n      content: \"<p>\" + strings_1[\"default\"].ProjectDescription + \"</p>\" + MainContent\n    });\n  };\n\n  return Project;\n}();\n\nexports.Project = Project;\n\n//# sourceURL=webpack:///./src/components/main.ts?");
 
 /***/ }),
 
