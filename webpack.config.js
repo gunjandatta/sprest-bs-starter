@@ -44,7 +44,7 @@ module.exports = (env, argv) => {
                         { loader: "css-loader" }
                     ]
                 },
-                // Handler HTML Files
+                // Handle HTML Files
                 {
                     test: /\.html$/,
                     exclude: "/node_modules/",
