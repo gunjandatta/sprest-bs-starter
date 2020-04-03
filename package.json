@@ -2,7 +2,7 @@
   "name": "project",
   "version": "1.0.0",
   "description": "Starter solution for a basic gd-sprest bootstrap project.",
-  "main": "./src/index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "all": "npm run build && npm run prod",
     "build": "webpack --mode=development",

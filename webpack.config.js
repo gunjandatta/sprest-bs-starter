@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
         // Main project files
         entry: [
             "./node_modules/gd-sprest-bs/dist/gd-sprest-bs-icons.min.js",
-            project.main
+            path.resolve(__dirname, project.main)
         ],
 
         // Output information
